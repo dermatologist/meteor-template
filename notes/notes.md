@@ -13,3 +13,31 @@ Add content as shown in: https://guide.meteor.com/vue.html
 NO_HMR=1 meteor run --port 8085 --settings settings.json
 
 ```
+
+## Database
+
+```
+Each app under development gets its own DB. From your app’s root:
+
+.meteor/local/db
+
+```
+
+## Check database
+
+```
+ou probably want to connect to the database, rather than look at the storage.
+
+Start your app:
+
+meteor run
+then in another console in your app’s root, do
+
+meteor mongo
+That will give you access to the MongoDB shell 7, where you can use any of MongoDB’s commands. For example:
+
+show collections
+db.someCollectionName.find().pretty()
+and so on.
+
+```

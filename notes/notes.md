@@ -41,3 +41,16 @@ db.someCollectionName.find().pretty()
 and so on.
 
 ```
+
+## Update
+
+```
+db.time.update(
+   { _id: "AEv2JWhrHogavY6gB" },
+   {
+     $set: {
+       "time" : ISODate("2018-12-21T11:04:37.431Z")
+     }
+   }
+)
+```
